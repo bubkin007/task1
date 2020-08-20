@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Solution {
     public static int number = 25;
 
