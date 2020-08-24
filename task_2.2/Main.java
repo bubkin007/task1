@@ -1,18 +1,24 @@
-public class Main{
+package com.company;
+
+
+public class Main {
+    public static int min(int a, int b, int c, int d)
+    {
 
         if(min(a,b)<min(c,d))
         {
             return min(a,b);
         }
         else
-            {
-                return min(c,d);
-            }
+        {
+            return min(c,d);
+        }
 
     }
 
     public static int min(int a, int b) {
-      return Math.min(a,b);
+
+        return Math.min(a,b);
     }
 
     public static void main(String[] args) throws Exception {
