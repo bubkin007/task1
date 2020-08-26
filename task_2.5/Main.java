@@ -1,12 +1,22 @@
+package com.main;
 public class Main {
     public static void main(String[] args) {
-        String[]mama = new String[]{"Мама", "Мыла", "Раму"};
-        System.out.println(mama[0] + mama[1]+mama[2]);
-        System.out.println(mama[0] + mama[2]+mama[1]);
-        System.out.println(mama[1] + mama[0]+mama[2]);
-        System.out.println(mama[1] + mama[2]+mama[0]);
-        System.out.println(mama[2] + mama[1]+mama[0]);
-        System.out.println(mama[2] + mama[0]+mama[1]);
+        String[] temp = {"мама", "мыла", "раму"};
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                for (int k = 0; k < 3; k++) {
+                    if (i == j)
+                        continue;
+                    if (k == i)
+                        continue;
+                    if (k == j)
+                        continue;
+                    System.out.print(temp[i]);
+                    System.out.print(temp[j]);
+                    System.out.println(temp[k]);
 
+                }
+            }
+        }
     }
 }
