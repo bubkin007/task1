@@ -22,7 +22,7 @@ public class Solution {
         }
     }
 
-    public static class Zhiv{   //класс предок
+    public static class Zhiv{  
         String name;
         int height;
         int tail;
@@ -32,8 +32,6 @@ public class Solution {
             this.tail=tail;
         }
     }
-
-    // теперь создаем потомков
     public static class Dog extends Zhiv {
         public Dog(String name, int height, int tail) {
             super(name, height, tail);
